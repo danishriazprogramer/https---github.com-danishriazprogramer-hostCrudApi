@@ -15,7 +15,8 @@ app.use("/static",express.static("public"))
 app.set("view engine", "ejs");
 app.set("views","views/partials")
 
-mongoose.connect("mongodb+srv://danishriazprogramer:EzxD4HpMxJwaDW5o@cluster0.fzjs5cn.mongodb.net/test",connectionParams)
+mongoose.connect("mongodb+srv://danishriazprogramer:EzxD4HpMxJwaDW5o@cluster0.fzjs5cn.mongodb.net/serverApi",connectionParams)
+
   .then(() => console.log('Connected!'));
 
 
