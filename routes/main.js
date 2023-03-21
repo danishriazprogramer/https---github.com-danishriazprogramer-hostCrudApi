@@ -98,7 +98,7 @@ routes.post("/register", async(req,resp)=>{
             const daaa=await BcryptJS.compareSync(Password, regadata.Password)
              if(daaa){
               let userList=await user.find();
-              resp.send(userList)
+              resp.send(regadata)
               //   resp.render("index" ,{userList})
               //  console.log(daaa)
              }
