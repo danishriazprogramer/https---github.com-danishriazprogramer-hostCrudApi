@@ -15,7 +15,15 @@ app.use("/static",express.static("public"))
 app.set("view engine", "ejs");
 app.set("views","views/partials")
 
-mongoose.connect("mongodb+srv://danishriazprogramer:EzxD4HpMxJwaDW5o@cluster0.fzjs5cn.mongodb.net/serverApi",connectionParams)
+const connectionParams={
+  useNewUrlParser: true,
+
+  useUnifiedTopology: true ,
+    
+      
+}
+
+mongoose.connect("mongodb+srv://danishriazprogramer:jTO957Bmn9sUJtGL@cluster0.fzjs5cn.mongodb.net/test",connectionParams)
 
   .then(() => console.log('Connected!'));
 
